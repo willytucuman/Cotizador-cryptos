@@ -1,0 +1,21 @@
+npm i @emotion/react @emotion/styled
+En jsx podemos usar html con expresione js pero tambien es posible crear un elemento html
+con la sintaxis componente y anadir propiedades css.
+En lugar de usar una hoja de estilos o una libreria externa , se escribe el css en cada componente.
+Al dejar de usar un componente podemos eliminar su codigo css tambien a diferencia de una hoja
+de estilos global.
+
+Sintaxis de un componente
+const heading = styled.h1`
+font-size: 2em;
+text-transform: uppercase;`;
+<HEADING>Nuestros productos</HEADING>
+
+Una api pone a disposicion recursos que estan alojados en otro servidor o base de datos.
+Usualmente se envia una peticion estructurada.
+Una api puede ser creada en cualquier lenguaje o framework.
+Generalmente dan una respuesta en formato .json para poder consumir en nuestra aplicacion.
+Al ser js puedes utilizar fetch api y obtener los datos para mostrarlos en pantalla.
+Algunas apis requieren key , y otras estan protegidas  por cors.
+Tambien es posible hacer con axios que es una libreria para sustituir a fetch api.
+
