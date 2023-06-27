@@ -1,4 +1,4 @@
-import "../styles/spinner.css"
+import '../assets/css/spinner.css'
 const Spinner = () => {
   return (
     <div className="sk-chase">

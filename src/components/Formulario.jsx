@@ -73,6 +73,7 @@ const Formulario = ({setMonedas}) => {
             value="Cotizar"
             />
         </form>
+        
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { useState ,useEffect} from 'react'
 import styled from"@emotion/styled";
-import ImagenCrypto from "./img/imagen-criptos.png"
+import ImagenCrypto from "./assets/img/imagen-criptos.png"
 import Formulario  from './components/Formulario';
 import Resultado from './components/Resultado';
 import Spinner from './components/Spinner';
@@ -80,6 +80,7 @@ function App() {
     { resultado.PRICE &&<Resultado resultado ={resultado}/>}
    </div>
   </Contenedor>
+  
   )
 }
 

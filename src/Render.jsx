@@ -5,14 +5,17 @@ import About from './Pages/About'
 import Populares from './Pages/Populares'
 import Login from './Pages/Login'
 import Default from './Pages/Default'
-import Layout from './Pages/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Pages/Navbar'
+import Footer from './Pages/Footer'
 
 const Render = () => {
   return (
-    <div>
+    <>
+    <div className='container'>
+      <div className='item c1'>
       <Routes>
-        <Route path='/' element={<Layout/>}>
+        <Route path='/' element={<Navbar/>}>
         <Route path='/' element={<App/>}></Route>
         <Route path='about' element={<About/>}></Route>
         <Route path='populares' element={<Populares/>}></Route>
@@ -20,12 +23,13 @@ const Render = () => {
         <Route path='*' element={<Default/>}/>
         </Route>
       </Routes>
-      <footer className="footer">
-      <div className="container">
-        <span className="text-muted">Este es el contenido del footer.</span>
       </div>
-    </footer>
+      <div className='item c4'><Footer/></div>
     </div>
+    <div>
+      
+    </div>
+    </>
   )
 }
 
