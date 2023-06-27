@@ -2,10 +2,8 @@ import { useState ,useEffect} from 'react'
 import styled from"@emotion/styled";
 import ImagenCrypto from "./img/imagen-criptos.png"
 import Formulario  from './components/Formulario';
-import useSelectMonedas from './hooks/useSelectMonedas';
 import Resultado from './components/Resultado';
 import Spinner from './components/Spinner';
-
 const Heading = styled.h1`
 font-family:"Lato",sans-serif;
 color:#FFF;
@@ -53,6 +51,7 @@ function App() {
       setResultado({})
       const {moneda,criptomoneda} = monedas
       const url =`https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsyms=${moneda}`
+      
       const respuesta = await fetch(url)
       const resultado = await respuesta.json()
       setResultado(resultado.DISPLAY[criptomoneda][moneda])
@@ -63,6 +62,8 @@ function App() {
 },[monedas])
 
   return (
+  
+
   <Contenedor>
    <Imagen src={ImagenCrypto}
           alt='imagen cryptos'

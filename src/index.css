@@ -1,3 +1,16 @@
+.active-green{
+  color: green;
+}
+
 body{
   background-color: #0D2235;
+}
+.card{
+  background-color: mediumaquamarine;
+}
+.card-body1{
+  margin-bottom: 20px;
+}
+.container-secondCard{
+  margin-top: 10px;
 }
